@@ -1,0 +1,89 @@
+body {
+    background-color: #444;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TaskBox {
+    border: solid 3px #ffff;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    color: #3ae0ec;
+    padding: 10px;
+    min-height: 300px;
+    border-radius: 26px;
+    margin: 15px;
+    margin-top: 25px;
+    box-shadow: 0px 0px 3px #fffff2;
+}
+
+h2 {
+    margin: 10px;
+    text-align: center;
+    font-size: 30px
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #3ae0ec;
+}
+
+.task {
+    margin: 10px;
+    text-align: center;
+    border: solid 1px #3ae0ec;
+    padding: 5px;
+    box-shadow: 0 0 10px #2f7d84;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.input {
+    margin: 10px;
+    background-color: #bba6a6;
+    padding: 10px;
+    box-shadow: 0 0 10px #2f7d84;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+
+button {
+    background-color: #3ae0ec;
+    color: #fff;
+    min-width: 90px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10 #2f7d84;
+    cursor: pointer;
+}
+
+@media (max-width: 450px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .input {
+        max-width: 130px;
+    }
+}
